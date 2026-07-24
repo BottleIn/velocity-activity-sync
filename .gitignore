@@ -1,0 +1,9 @@
+# 토큰·자격증명은 Apps Script Script Properties 에만 둔다. 레포에 절대 커밋하지 않는다.
+*.token
+.env
+.env.*
+credentials.json
+.clasprc.json
+
+.DS_Store
+node_modules/
