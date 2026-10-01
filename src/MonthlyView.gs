@@ -18,6 +18,7 @@ const LINK_COL = 15;              // O열 신청서 URL — 티켓 링크를 ups
 function scheduledSync() {
   syncNow();
   applyAllMonths_();
+  updateStatusTab();
 }
 
 /**

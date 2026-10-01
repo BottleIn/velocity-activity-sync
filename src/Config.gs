@@ -66,6 +66,9 @@ const COLUMNS = [
 ];
 
 /** 시트가 참조하는 커스텀 필드 이름 목록. */
+/** portal/lib/jira-plan.js의 SHEET_EXCLUDED_LABEL과 같은 값이어야 한다. */
+const SHEET_EXCLUDED_LABEL = '시트제외';
+
 function customFieldNames_() {
   return COLUMNS.filter(function (c) { return c.source === 'custom'; })
                 .map(function (c) { return c.jiraField; });

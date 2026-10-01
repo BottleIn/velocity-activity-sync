@@ -1,0 +1,14 @@
+{
+  "name": "velocity-activity-sync",
+  "private": true,
+  "type": "module",
+  "description": "사무국 포털과 Jira 활동비 티켓, 구글 시트를 맞추는 스크립트",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:coverage": "node --test --experimental-test-coverage \"test/**/*.test.js\"",
+    "portal-sync": "node portal/sync.js"
+  }
+}

@@ -94,7 +94,7 @@ function buildJql_() {
 /** 활동비 항목 티켓 전체를 조회한다. */
 function fetchActivityIssues_() {
   const fieldMap = getFieldMap_();
-  const fieldIds = ['summary', 'assignee'];
+  const fieldIds = ['summary', 'assignee', 'labels'];
 
   COLUMNS.forEach(function (col) {
     if (col.source !== 'custom') return;
@@ -102,5 +102,9 @@ function fetchActivityIssues_() {
     if (id) fieldIds.push(id);
   });
 
-  return jiraSearch_(buildJql_(), fieldIds);
+  // 여러 달 신청 티켓의 신청금액은 어림값이라, 포털 동기화가 붙인 이 라벨이 있으면 시트에 싣지 않는다.
+  // JQL이 아니라 여기서 거르는 것은 설정의 JQL_OVERRIDE를 써도 빠지지 않게 하려는 것이다.
+  return jiraSearch_(buildJql_(), fieldIds).filter(function (issue) {
+    return (issue.fields.labels || []).indexOf(SHEET_EXCLUDED_LABEL) === -1;
+  });
 }

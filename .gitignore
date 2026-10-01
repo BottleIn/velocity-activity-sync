@@ -7,3 +7,11 @@ credentials.json
 
 .DS_Store
 node_modules/
+
+# 증빙 파일에는 카드 영수증이 들어 있어서 내려받은 파일과 읽은 결과를 커밋하지 않는다. 시험 자료는 test/fixtures에 있다.
+*.pdf
+*.docx
+state.json
+portal-output.json
+pdftext
+!test/fixtures/portal-output.json

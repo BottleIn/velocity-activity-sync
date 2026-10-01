@@ -1,0 +1,38 @@
+{
+ "000000000000000000000000000003eb:1": {
+  "kind": "pdf",
+  "text": "=== page 1\nAIㆍ SW 서비스 이용료 증빙 내역서\n팀명 가짜팀(홍길동) 금액(VAT포함) 310,000원 (220$)\n서비스명 가짜 구독 이용 기간 7월20일~8월19일\n=== page 2\n카드사\n=== page 3\nAIㆍ SW 서비스 이용료 증빙 내역서\n팀명 가짜팀 (김철수) 금액(VAT포함) 200달러(280,000원)\n서비스명 가짜 구독 이용 기간 7월 16일 ~ 8월 16일\n=== page 4\n카드사\n=== page 5\nAIㆍSW 서비스 이용료 증빙 내역서\n팀명 가짜팀 금액(VAT포함) 210.5\n서비스명 가짜 구독 이용 기간 7월 20일 ~ 8월 19일"
+ },
+ "000000000000000000000000000003eb:2": {
+  "kind": "pdf",
+  "text": "=== page 1\nAIㆍ SW 서비스 이용료 증빙 내역서\n팀명 가짜팀 (홍길동) 금액(VAT포함) 300,000원\n서비스명 가짜 구독 이용 기간 8월 19일 ~ 9월 19일\n=== page 2\n카드사\n=== page 3\n팀명 가짜팀 (김철수) 금액(VAT포함) 305,000원($220)\n서비스명 가짜 구독 이용 기간 8월 16일 ~ 9월 16일\n=== page 4\n\n=== page 5\n팀명 가짜팀(이영희) 금액(VAT포함) 220달러(295,000원)\n서비스명 가짜 구독 이용 기간 8월 20일 ~ 9월 20일\n=== page 6\n1카드이용내역확인서(원화 결제 금액 내역 증빙)"
+ },
+ "000000000000000000000000000003eb:3": {
+  "kind": "pdf",
+  "text": "=== page 1\nAIㆍ SW 서비스 이용료 증빙 내역서\n팀명 가짜팀(홍길동) 금액(VAT포함) 298,000원\n서비스명 가짜 구독 이용 기간 9월 19일 ~ 10월 19일\n=== page 2\n팀명 가짜팀(김철수) 금액 (VAT 포함) 302,000원($220)\n명 가짜 구독 이용 기간 9월 16일 ~ 10월 16일\n=== page 3\n팀명 가짜팀(이영희) 금액(VAT포함) 220달러(290,000원)\n명 가짜 구독 이용 기간 9월 25일 ~ 10월 25일\n=== page 4\n1. 카드이용내역확인서(원화 결제 금액 내역 증빙)"
+ },
+ "000000000000000000000000000003ec:1": {
+  "kind": "pdf",
+  "text": "=== page 1\n재료 구매비 증빙 내역서\n팀명 가짜팀 금액(VAT포함) 500,000\n제품명 가짜 허브, 외장 저장장치 수량 3 / 1\n=== page 2\n실제"
+ },
+ "00000000-0000-0000-0000-000003ef:1": {
+  "kind": "docx",
+  "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:body><w:p><w:r><w:t>AIㆍSW 서비스 이용료 증빙 내역서</w:t></w:r></w:p><w:tbl><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">팀</w:t></w:r><w:r><w:t xml:space=\"preserve\">명</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">가</w:t></w:r><w:r><w:t xml:space=\"preserve\">짜팀</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">금액(V</w:t></w:r><w:r><w:t xml:space=\"preserve\">AT포함)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">29,500</w:t></w:r><w:r><w:t xml:space=\"preserve\">원 (20$)</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">이용</w:t></w:r><w:r><w:t xml:space=\"preserve\"> 기간</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">8월 22일 </w:t></w:r><w:r><w:t xml:space=\"preserve\">~ 9월 22일</w:t></w:r></w:p></w:tc></w:tr></w:tbl></w:body></w:document>"
+ },
+ "00000000-0000-0000-0000-000003ef:2": {
+  "kind": "pdf",
+  "text": "=== page 1\nReceipt\nAmount paid $20.00\n=== page 2\n"
+ },
+ "000000000000000000000000000003ee:1": {
+  "kind": "docx",
+  "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:body><w:p><w:r><w:t>AIㆍSW 서비스 이용료 증빙 내역서</w:t></w:r></w:p><w:tbl><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">팀</w:t></w:r><w:r><w:t xml:space=\"preserve\">명</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">가</w:t></w:r><w:r><w:t xml:space=\"preserve\">짜팀</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">금액(V</w:t></w:r><w:r><w:t xml:space=\"preserve\">AT포함)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">6,0</w:t></w:r><w:r><w:t xml:space=\"preserve\">00 원</w:t></w:r></w:p></w:tc></w:tr></w:tbl></w:body></w:document>"
+ },
+ "000000000000000000000000000003ed:1": {
+  "kind": "docx",
+  "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:body><w:p><w:r><w:t>AIㆍSW 서비스 이용료 증빙 내역서</w:t></w:r></w:p><w:tbl><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">팀</w:t></w:r><w:r><w:t xml:space=\"preserve\">명</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">가</w:t></w:r><w:r><w:t xml:space=\"preserve\">짜팀</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">금액(V</w:t></w:r><w:r><w:t xml:space=\"preserve\">AT포함)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">5$</w:t></w:r><w:r><w:t xml:space=\"preserve\"> 원</w:t></w:r></w:p></w:tc></w:tr></w:tbl></w:body></w:document>"
+ },
+ "000000000000000000000000000003f3:1": {
+  "kind": "docx",
+  "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><w:document xmlns:w=\"http://schemas.openxmlformats.org/wordprocessingml/2006/main\"><w:body><w:p><w:r><w:t>AIㆍSW 서비스 이용료 증빙 내역서</w:t></w:r></w:p><w:tbl><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">팀</w:t></w:r><w:r><w:t xml:space=\"preserve\">명</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">가짜팀 &a</w:t></w:r><w:r><w:t xml:space=\"preserve\">mp; 친구들</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">금액(V</w:t></w:r><w:r><w:t xml:space=\"preserve\">AT포함)</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">29,000</w:t></w:r><w:r><w:t xml:space=\"preserve\">원 (20$)</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">이용</w:t></w:r><w:r><w:t xml:space=\"preserve\"> 기간</w:t></w:r></w:p></w:tc><w:tc><w:tcPr/><w:p><w:pPr/><w:r><w:t xml:space=\"preserve\">9월 28일 ~</w:t></w:r><w:r><w:t xml:space=\"preserve\"> 10월 27일</w:t></w:r></w:p></w:tc></w:tr></w:tbl></w:body></w:document>"
+ }
+}
