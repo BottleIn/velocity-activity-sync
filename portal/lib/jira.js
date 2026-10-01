@@ -129,6 +129,10 @@ export function createFields({ jira, ticket, baseUrl }) {
   return fields;
 }
 
+// VEL 프로젝트 워크플로의 '완료' 전환 id다. 티켓은 증빙완료된 신청으로만 만들어서 만들 때 바로 완료로 옮긴다.
+// 예전부터 사람이 만든 활동비 티켓도 결제가 끝나면 완료에 두었다.
+export const DONE_TRANSITION_ID = '41';
+
 // 만든 티켓은 다시 읽어 요약이 그대로인지 본다. 한글이 조용히 바뀌어 저장된 적이 있다.
 export async function applyPlan(request, { jira, plan, baseUrl }) {
   const created = [];
@@ -136,6 +140,7 @@ export async function applyPlan(request, { jira, plan, baseUrl }) {
     const fields = createFields({ jira, ticket, baseUrl });
     const { key } = await request('POST', '/issue', { fields });
     await request('PUT', `/issue/${key}/properties/${PROPERTY_KEY}`, { key: ticket.portalKey });
+    await request('POST', `/issue/${key}/transitions`, { transition: { id: DONE_TRANSITION_ID } });
     const saved = await request('GET', `/issue/${key}?fields=summary`);
     if (saved.fields.summary !== fields.summary) throw new UserError(`${key}의 요약이 다르게 저장됐습니다: ${saved.fields.summary}`);
     created.push({ key, portalKey: ticket.portalKey });

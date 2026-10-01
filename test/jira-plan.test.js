@@ -2,7 +2,7 @@ import { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 
 import { SHEET_EXCLUDED_LABEL, jiraItemOf, paymentMethodOf, planJiraOps } from '../portal/lib/jira-plan.js';
-import { createFields, parseNetrc } from '../portal/lib/jira.js';
+import { DONE_TRANSITION_ID, applyPlan, createFields, parseNetrc } from '../portal/lib/jira.js';
 import { formatJiraMoney, formatPlan } from '../portal/lib/jira-sync.js';
 
 function application(overrides = {}) {
@@ -223,5 +223,23 @@ describe('the sheet-excluded label', () => {
     assert.deepEqual(createFields({ jira, ticket: byKey['1003'], baseUrl: 'https://portal.test' }).labels, [SHEET_EXCLUDED_LABEL]);
     assert.equal(createFields({ jira, ticket: byKey['1003-2차'], baseUrl: 'https://portal.test' }).labels, undefined);
     assert.equal(createFields({ jira, ticket: byKey['1007'], baseUrl: 'https://portal.test' }).labels, undefined);
+  });
+});
+
+describe('applyPlan', () => {
+  it('moves a new ticket to done, since only completed evidence becomes a ticket', async () => {
+    const jira = { projectKey: 'VEL', issueTypeId: '1', epicKey: 'VEL-1', authors: {}, fields: {} };
+    const plan = planJiraOps({ snapshot: { applications: [application()] }, issues: [] });
+    const calls = [];
+    const request = async (method, path, body) => {
+      calls.push({ method, path, body });
+      if (method === 'POST' && path === '/issue') return { key: 'VEL-50' };
+      if (method === 'GET') return { fields: { summary: plan.creates[0].createOnly.summary } };
+      return {};
+    };
+
+    await applyPlan(request, { jira, plan, baseUrl: 'https://portal.test' });
+
+    assert.deepEqual(calls.find((call) => call.path === '/issue/VEL-50/transitions').body, { transition: { id: DONE_TRANSITION_ID } });
   });
 });
