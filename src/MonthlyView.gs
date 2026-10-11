@@ -19,6 +19,7 @@ function scheduledSync() {
   syncNow();
   applyAllMonths_();
   updateStatusTab();
+  updateSubscriptionTab();
 }
 
 /**

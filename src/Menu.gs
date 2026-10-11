@@ -26,6 +26,7 @@ function menuSyncNow() {
     const count = syncNow();
     const stats = applyAllMonths_();
     updateStatusTab();
+    updateSubscriptionTab();
     ui.alert('활동비 동기화', 'Jira ' + count + '건 동기화\n' + formatStats_(stats), ui.ButtonSet.OK);
   } catch (err) {
     ui.alert('동기화 실패', String(err.message), ui.ButtonSet.OK);
