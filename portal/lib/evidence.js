@@ -5,13 +5,17 @@ const PLACEHOLDER_ORIGIN = 'https://portal.invalid';
 const ATCH_FILE_ID = /^[A-Za-z0-9-]+$/;
 const FILE_SN = /^\d+$/;
 const MONTH_PREFIX = /^(\d{1,2})월/;
+// 팀이 '증빙 내역서_9월.pdf'처럼 달을 끝에 붙여 올리기 시작해서 끝자리도 받는다. 이름 중간의 달은 받지 않는데,
+// '7월~9월'이나 '7월_최종'처럼 어느 달의 결제인지 단정할 수 없는 이름이 생길 수 있어서다.
+const MONTH_SUFFIX = /[_\s](\d{1,2})월(?:\.[A-Za-z0-9]{1,5})?$/;
 const EXTENSION = /\.([A-Za-z0-9]{1,5})$/;
 const MIN_MONTH = 1;
 const MAX_MONTH = 12;
 
 // 포털은 한글 파일 이름을 자모가 풀어진 NFD로 줄 때가 있어, 정규화하지 않으면 '월'이 다른 글자로 비교된다.
 export function monthFromName(name) {
-  const match = MONTH_PREFIX.exec(String(name ?? '').normalize('NFC'));
+  const normalized = String(name ?? '').normalize('NFC');
+  const match = MONTH_PREFIX.exec(normalized) ?? MONTH_SUFFIX.exec(normalized);
   if (!match) return null;
   const month = Number(match[1]);
   return month >= MIN_MONTH && month <= MAX_MONTH ? month : null;

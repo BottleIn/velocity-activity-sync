@@ -206,7 +206,7 @@ function orphanWarning(foundId, file) {
   return warn(
     WARNING.FILE_WITHOUT_MONTH,
     foundId,
-    `신청 ${foundId}: 월별 신청인데 파일 이름이 'N월'로 시작하지 않아 결제로 세지 않았습니다 (파일: ${fileLabel(file)}).`,
+    `신청 ${foundId}: 월별 신청인데 파일 이름이 'N월'로 시작하거나 끝나지 않아 결제로 세지 않았습니다 (파일: ${fileLabel(file)}).`,
   );
 }
 

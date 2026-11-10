@@ -25,7 +25,14 @@ describe('monthFromName', () => {
     ['월_증빙.pdf', null],
     ['x7월_증빙.pdf', null],
     ['(7월)_증빙.pdf', null],
-    ['증빙_7월.pdf', null],
+    ['증빙_7월.pdf', 7],
+    ['사후정산-0000-000_가짜팀_증빙 내역서_9월.pdf', 9],
+    ['(가짜-pro)_가짜구독_증빙_내역서_10월.docx', 10],
+    ['가짜구독 증빙 11월.pdf', 11],
+    ['가짜구독_증빙_9월', 9],
+    ['증빙_7월_최종.pdf', null],
+    ['증빙x7월.pdf', null],
+    ['증빙_13월.pdf', null],
     ['', null],
   ];
   for (const [name, expected] of cases) {
